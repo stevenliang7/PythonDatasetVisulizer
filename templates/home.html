@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>ITP:216 Final Project</h1>
+        <h2>Enter a County and State to look up:</h2>
+        <form action="/lookup" method="POST">
+            <input type="county" name="county" placeholder="County Name" required>
+            <input type="state" name="state" placeholder="State" required>
+            <input type="submit" value="Search">
+
+        <p>Choose to view by population by county or state:</p>
+
+            <input type="radio" name="type" value="County" required>
+            <label for="county">County</label><br>
+            <input type="radio" name="type" value="State">
+            <label for="state">State</label><br>
+        </form>
+    </body>
+</html>
